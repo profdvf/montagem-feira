@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inf Pro — Início</title>
+
+  <!-- Tailwind (CDN para protótipo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bootstrap (para Carousel e componentes) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface">
+
+  <!-- navbar -->
+  <header class="site-header">
+    <div class="container flex items-center justify-between">
+      <a class="brand" href="index.html">INF PRO</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="loja.html">Loja</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-theme">🌙</button>
+        <a href="login.html" class="btn btn-sm btn-outline">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero + carousel -->
+  <main>
+    <!-- Seção com efeito parallax -->
+    <section class="parallax-section">
+      <div class="parallax-bg"></div>
+      <div class="container">
+        <div class="parallax-content">
+          <h1 class="hero-title">Montagem profissional de PCs</h1>
+          <p class="lead">Peças selecionadas, montagem premium e garantia. Ferramentas e testes profissionais.</p>
+          <div class="mt-6">
+            <a href="loja.html" class="btn-primary">Ver Loja</a>
+            <a href="servicos.html" class="btn-outline">Serviços</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel de produtos -->
+    <section class="container py-12">
+      <h2 class="section-title text-center mb-8">Destaques</h2>
+      <div id="heroCarousel" class="carousel slide rounded shadow-lg" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gabinete.jpg" class="d-block w-100 rounded" alt="Gabinete Gamer">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Gabinetes Gamers</h5>
+              <p>Design futurista com iluminação RGB personalizável</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="placa.webp" class="d-block w-100 rounded" alt="Placa de Vídeo">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Placas de Vídeo</h5>
+              <p>Alta performance para jogos e aplicações profissionais</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="processador.webp" class="d-block w-100 rounded" alt="Processador">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Processadores</h5>
+              <p>Máximo desempenho para multitarefa e jogos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="monitor.jpg" class="d-block w-100 rounded" alt="Monitor Gamer">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Monitores Gamers</h5>
+              <p>Alta taxa de atualização e baixo tempo de resposta</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Seção de recursos -->
+    <section class="container py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="feature-card text-center">
+          <i class="fas fa-shipping-fast feature-icon"></i>
+          <h3 class="feature-title">Entrega Rápida</h3>
+          <p class="feature-desc">Entregamos em todo o Maranhão com frete grátis para compras acima de R$ 700</p>
+        </div>
+        <div class="feature-card text-center">
+          <i class="fas fa-shield-alt feature-icon"></i>
+          <h3 class="feature-title">Garantia Estendida</h3>
+          <p class="feature-desc">Oferecemos garantia de 12 meses em todos os produtos e serviços</p>
+        </div>
+        <div class="feature-card text-center">
+          <i class="fas fa-headset feature-icon"></i>
+          <h3 class="feature-title">Suporte 24/7</h3>
+          <p class="feature-desc">Nossa equipe de suporte está disponível para ajudar a qualquer momento</p>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- Footer melhorado -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>INF PRO</h4>
+          <p>Especialistas em montagem de computadores e assistência técnica com qualidade e garantia.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="servicos.html">Montagem de PCs</a></li>
+            <li><a href="servicos.html">Manutenção</a></li>
+            <li><a href="servicos.html">Custom Builds</a></li>
+            <li><a href="servicos.html">Upgrade</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. 13, Maiobão - Paço do Lumiar, MA</li>
+            <li><i class="fas fa-phone"></i> (98) 9999-9999</li>
+            <li><i class="fas fa-envelope"></i> informatica@201.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Inf Pro - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

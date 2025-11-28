@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Inf Pro — Serviços</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface">
+  <header class="site-header">
+    <div class="container flex items-center justify-between">
+      <a class="brand" href="index.html">INF PRO</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="loja.html">Loja</a>
+        <a href="servicos.html" class="active">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-12">
+    <h1 class="text-3xl font-bold mb-2">Nossos Serviços</h1>
+    <p class="text-muted mb-8">Soluções completas em tecnologia para suas necessidades</p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <h3 class="service-title">Montagem de Computadores</h3>
+        <p class="service-desc">Montamos seu PC com peças selecionadas, organização de cabos, aplicação de pasta térmica e testes de estabilidade.</p>
+        <ul class="service-features">
+          <li>Seleção de componentes compatíveis</li>
+          <li>Cable management profissional</li>
+          <li>Testes de stress e temperatura</li>
+          <li>Garantia de 12 meses</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3 class="service-title">Manutenção de Computadores</h3>
+        <p class="service-desc">Diagnóstico, limpeza interna, troca de componentes e reparos em desktops e workstations.</p>
+        <ul class="service-features">
+          <li>Limpeza interna completa</li>
+          <li>Substituição de componentes</li>
+          <li>Atualização de BIOS/drivers</li>
+          <li>Otimização de sistema</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <h3 class="service-title">Manutenção de Notebooks</h3>
+        <p class="service-desc">Reparos especializados em notebooks de todas as marcas, desde limpeza até substituição de telas e teclados.</p>
+        <ul class="service-features">
+          <li>Limpeza interna e externa</li>
+          <li>Troca de telas e teclados</li>
+          <li>Reparo na placa-mãe</li>
+          <li>Upgrade de memória e SSD</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="service-title">Manutenção de Celulares</h3>
+        <p class="service-desc">Conserto de smartphones, troca de telas, baterias e outros componentes com peças originais.</p>
+        <ul class="service-features">
+          <li>Troca de telas e películas</li>
+          <li>Substituição de baterias</li>
+          <li>Reparo de conectores</li>
+          <li>Recuperação de dados</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3 class="service-title">Custom Builds</h3>
+        <p class="service-desc">Projetos personalizados para gamers, criadores de conteúdo e profissionais com design único.</p>
+        <ul class="service-features">
+          <li>Design personalizado</li>
+          <li>Modding e pintura</li>
+          <li>Iluminação RGB customizada</li>
+          <li>Refrigeração líquida custom</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon mb-4">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+        <h3 class="service-title">Upgrade e Otimização</h3>
+        <p class="service-desc">Melhoramos o desempenho do seu computador atual com upgrades estratégicos e otimizações.</p>
+        <ul class="service-features">
+          <li>Análise de gargalos</li>
+          <li>Instalação de SSDs</li>
+          <li>Upgrade de memória RAM</li>
+          <li>Otimização de sistema</li>
+        </ul>
+        <a href="contato.html" class="btn-service">Solicitar Orçamento</a>
+      </div>
+    </div>
+    
+    <!-- MODIFICAÇÃO AQUI: Alterado de bg-primary para bg-accent -->
+    <div class="mt-12 bg-accent text-white rounded-lg p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Precisa de um serviço personalizado?</h2>
+      <p class="mb-6">Entre em contato conosco para um orçamento sem compromisso</p>
+      <a href="contato.html" class="btn btn-light btn-lg">Fale Conosco</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>INF PRO</h4>
+          <p>Especialistas em montagem de computadores e assistência técnica com qualidade e garantia.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="servicos.html">Montagem de PCs</a></li>
+            <li><a href="servicos.html">Manutenção</a></li>
+            <li><a href="servicos.html">Custom Builds</a></li>
+            <li><a href="servicos.html">Upgrade</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+           <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. 13, Maiobão - Paço do Lumiar, MA</li>
+            <li><i class="fas fa-phone"></i> (98) 9999-9999</li>
+            <li><i class="fas fa-envelope"></i> informatica@201.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Inf Pro - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

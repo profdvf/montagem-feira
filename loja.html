@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inf Pro — Loja</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface">
+  <header class="site-header">
+    <div class="container flex items-center justify-between">
+      <a class="brand" href="index.html">INF PRO</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="loja.html" class="active">Loja</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle2" class="btn-theme">🌙</button>
+        <a href="login.html" class="btn btn-sm btn-outline">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-10">
+    <div class="flex justify-between items-center mb-6 flex-col md:flex-row gap-4">
+      <h1 class="text-3xl font-bold">Catálogo de Produtos</h1>
+      <div class="flex gap-2 w-full md:w-auto">
+        <div class="relative flex-grow">
+          <input id="searchInput" placeholder="Pesquisar..." class="input-search pl-10">
+          <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+        <select id="categoryFilter" class="select-filter">
+          <option value="all">Todas as Categorias</option>
+          <option value="gpu">Placa de Vídeo</option>
+          <option value="cpu">Processador</option>
+          <option value="mb">Placa-mãe</option>
+          <option value="ram">Memória RAM</option>
+          <option value="case">Gabinete</option>
+          <option value="cooler">Cooler</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productsGrid" class="grid md:grid-cols-3 gap-6"></div>
+  </main>
+
+  <!-- carrinho offcanvas -->
+  <div class="offcanvas offcanvas-end" id="cartOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Carrinho de Compras</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="cartItems"></div>
+      <div class="mt-3 pt-3 border-top">
+        <div class="d-flex justify-content-between"><div>Subtotal</div><div id="cartSubtotal">R$ 0,00</div></div>
+        <div class="d-flex justify-content-between"><div>Frete</div><div id="cartShipping">R$ 0,00</div></div>
+        <div class="d-flex justify-content-between fw-bold mt-2 fs-5"><div>Total</div><div id="cartTotal">R$ 0,00</div></div>
+        <div class="mt-4">
+          <button id="btnCheckout" class="btn btn-success w-100 py-2">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="cart-floating" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">🛒 (0)</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>INF PRO</h4>
+          <p>Especialistas em montagem de computadores e assistência técnica com qualidade e garantia.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="loja.html?category=gpu">Placas de Vídeo</a></li>
+            <li><a href="loja.html?category=cpu">Processadores</a></li>
+            <li><a href="loja.html?category=ram">Memória RAM</a></li>
+            <li><a href="loja.html?category=mb">Placas-mãe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. 13, Maiobão - Paço do Lumiar, MA</li>
+            <li><i class="fas fa-phone"></i> (98) 9999-9999</li>
+            <li><i class="fas fa-envelope"></i> informatica@201.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Inf Pro - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
